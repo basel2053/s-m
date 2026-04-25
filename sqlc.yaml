@@ -5,6 +5,6 @@ sql:
     queries: "sql/queries"
     gen:
       go:
-        out: "db"
+        out: "database"
         package: "database"
         sql_package: "pgx/v5"

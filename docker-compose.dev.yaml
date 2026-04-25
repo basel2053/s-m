@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:18.3-bookworm
+    restart: always
+    # shm_size: 128mb
+    ports:
+      - 5435:5432
+    volumes:
+      - ./pgdata:/var/lib/postgresql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: social-media
