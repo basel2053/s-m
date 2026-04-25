@@ -1,3 +1,3 @@
 -- name CreateUser: one
-INSERT INTO users (username, password)
+INSERT INTO users (email, password)
 VALUES ($1, $2);
